@@ -51,7 +51,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: auto; /* Ensure body height adjusts naturally */}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8135,9 +8138,7 @@ body {
   color: #999999; }
   body.menu-show {
     overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%; }
+    }
 
 a {
   -webkit-transition: .3s all ease;
